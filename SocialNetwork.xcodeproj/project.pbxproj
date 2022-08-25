@@ -14,6 +14,11 @@
 		3F6792EC28B422DE007B9E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6792EB28B422DE007B9E70 /* Assets.xcassets */; };
 		3F6792EF28B422DE007B9E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6792ED28B422DE007B9E70 /* LaunchScreen.storyboard */; };
 		3F6792F728B42446007B9E70 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6792F628B42446007B9E70 /* Session.swift */; };
+		3F6792FA28B42563007B9E70 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6792F928B42563007B9E70 /* FriendsViewController.swift */; };
+		3F6792FD28B42602007B9E70 /* FriendsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6792FC28B42602007B9E70 /* FriendsJSON.swift */; };
+		3F67930028B7864D007B9E70 /* ProfileJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6792FF28B7864D007B9E70 /* ProfileJSON.swift */; };
+		3F67930228B7878D007B9E70 /* GroupsJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F67930128B7878D007B9E70 /* GroupsJSON.swift */; };
+		3F67930428B787C9007B9E70 /* PhotoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F67930328B787C9007B9E70 /* PhotoJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		3F6792EE28B422DE007B9E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F6792F028B422DE007B9E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6792F628B42446007B9E70 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		3F6792F928B42563007B9E70 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		3F6792FC28B42602007B9E70 /* FriendsJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsJSON.swift; sourceTree = "<group>"; };
+		3F6792FF28B7864D007B9E70 /* ProfileJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileJSON.swift; sourceTree = "<group>"; };
+		3F67930128B7878D007B9E70 /* GroupsJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsJSON.swift; sourceTree = "<group>"; };
+		3F67930328B787C9007B9E70 /* PhotoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,10 @@
 		3F6792E128B422DA007B9E70 /* SocialNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				3F6792FB28B425DF007B9E70 /* Struct */,
 				3F6792E228B422DA007B9E70 /* AppDelegate.swift */,
 				3F6792E428B422DA007B9E70 /* SceneDelegate.swift */,
-				3F6792E628B422DA007B9E70 /* LoginViewController.swift */,
+				3F6792F828B42545007B9E70 /* VC */,
 				3F6792F628B42446007B9E70 /* Session.swift */,
 				3F6792E828B422DA007B9E70 /* Main.storyboard */,
 				3F6792EB28B422DE007B9E70 /* Assets.xcassets */,
@@ -68,6 +79,34 @@
 				3F6792F028B422DE007B9E70 /* Info.plist */,
 			);
 			path = SocialNetwork;
+			sourceTree = "<group>";
+		};
+		3F6792F828B42545007B9E70 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				3F6792E628B422DA007B9E70 /* LoginViewController.swift */,
+				3F6792F928B42563007B9E70 /* FriendsViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		3F6792FB28B425DF007B9E70 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				3F6792FE28B7862B007B9E70 /* JSON_DB */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		3F6792FE28B7862B007B9E70 /* JSON_DB */ = {
+			isa = PBXGroup;
+			children = (
+				3F6792FC28B42602007B9E70 /* FriendsJSON.swift */,
+				3F6792FF28B7864D007B9E70 /* ProfileJSON.swift */,
+				3F67930128B7878D007B9E70 /* GroupsJSON.swift */,
+				3F67930328B787C9007B9E70 /* PhotoJSON.swift */,
+			);
+			path = JSON_DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F6792F728B42446007B9E70 /* Session.swift in Sources */,
+				3F67930428B787C9007B9E70 /* PhotoJSON.swift in Sources */,
+				3F6792FD28B42602007B9E70 /* FriendsJSON.swift in Sources */,
+				3F6792FA28B42563007B9E70 /* FriendsViewController.swift in Sources */,
+				3F67930028B7864D007B9E70 /* ProfileJSON.swift in Sources */,
 				3F6792E728B422DA007B9E70 /* LoginViewController.swift in Sources */,
+				3F67930228B7878D007B9E70 /* GroupsJSON.swift in Sources */,
 				3F6792E328B422DA007B9E70 /* AppDelegate.swift in Sources */,
 				3F6792E528B422DA007B9E70 /* SceneDelegate.swift in Sources */,
 			);

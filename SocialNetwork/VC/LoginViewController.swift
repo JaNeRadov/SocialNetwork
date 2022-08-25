@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
             URLQueryItem(name: "redirect_url", value: "https://oauth.vk.com/blank.html"),
             URLQueryItem(name: "scope", value: "262150"),
             URLQueryItem(name: "response_type", value: "token"),
-            URLQueryItem(name: "v", value: "5.68")]
+            URLQueryItem(name: "v", value: "5.131")]
         
         guard let url = urlComponents.url else { return }
         
